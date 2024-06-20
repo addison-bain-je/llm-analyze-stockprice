@@ -41,18 +41,33 @@ Date column should include this Month- Year instead of dates day by day.`
 ![Box-plot 1](images/Image5.png)
 <br> We can oberve that there is a positive stock returns on most months. If you had held this stock over the entire period, you would have likely accumulated a decent gain :)
 <br>
-## Line Plot With Trending Events
+### Line Plot With Trending Events
 <br> Now, we want to know how the stock price has changed over time and see if we can correlate key events to these changes.
 <br>
 `Create a plot of adjusted close price over time with annotations for significant events. 
 The dataset contains the 'Date' and 'Adj Close' columns. 
 Identify significant events based on major changes in the stock price and annotate them on the plot.`
-<br> Here's the initial line plot. However, the model seems to have made an incorrect assumption, and basically marked out all the changes are significant.
+<br> Here's the initial line plot, which looks super messy. The model seems to have made an incorrect assumption, and basically marked all changes as significant.
 ![Line-plot 1](images/Image6.png)
-<br> Let's correct its assumption and only consider those changes that are more 3 standard deviations.
+<br> Let's correct its assumption and only consider those changes which are more 3 standard deviations.
+<br> We can use this prompt:
 <br>
 `Please revise the line plot. Only those changes which are more than 3 standard deviations should be considered significant.`
 ![Line-plot 2](images/Image7.png)
 <br>
 <br>
+### Get Multiple Charts
+If you have absolutely no idea what to analyze, perhaps you can try your luck to see what the model can keep up with automatically:
+<br>
+`Show me 3 different graphs that can provide different information and meaningful insights.`
+![multiple-plot 1](images/Image8-1.png)
+![multiple-plot 2](images/Image8-2.png) ![multiple-plot 3](images/Image8-3.png) ![multiple-plot 4](images/Image8-4.png)
+<br>
+<br> 
+## Additional Notes
+### Python Execution Error
+Sometimes you may observe that the AI Assistant encounters some error when excuting the Python script, perhaps due to issue with environment or even syntax error.
+<br> Generally, the AI Assistant should be able to self-correct and re-run the script, as shown below:
+![Error](images/Image9.png)
+
 
