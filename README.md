@@ -69,5 +69,9 @@ If you have absolutely no idea what to analyze, perhaps you can try your luck to
 Sometimes you may observe that the AI Assistant encounters some error when excuting the Python script, perhaps due to issue with environment or even syntax error.
 <br> Generally, the AI Assistant should be able to self-correct and re-run the script, as shown below:
 ![Error](images/Image9.png)
-
-
+<br>
+### Correlate with actual world events
+Remember the plot above where I marked out the signficant changes in stock prices?
+<br> What if we can correlate those data points with actual world events that happened in the past?
+<br> Currently, Azure AI Assistant does not have access to the Internet or web resources.
+<br> A further improvement could be to incorporate a Function that calls a Web Search API, so that the LLM can also refer to news articles from the Internet and supplement its analysis and responses.
